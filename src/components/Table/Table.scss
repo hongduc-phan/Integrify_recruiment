@@ -1,0 +1,44 @@
+@import "../../styles/variable";
+@import "../../styles/mixins";
+
+.table {
+  background-color: #fff;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-row {
+
+}
+
+.table-head {
+  text-align: left;
+  color: $color-table-head;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  height: 48px;
+}
+
+.table-col {
+  color: #505050;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  height: 72px;
+}
+
+.table-head,
+.table-col {
+  padding-right: 8px;
+  padding-left: 8px;
+  border-bottom: 2px solid $color-table-border;
+
+  &:first-child {
+    padding-left: 16px;
+  }
+
+  &:last-child {
+    padding-right: 16px;
+  }
+}

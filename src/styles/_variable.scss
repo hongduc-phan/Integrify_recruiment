@@ -1,0 +1,37 @@
+//view range
+$view-ranges: (
+  tablet-normal: 750px,
+  desktop: 1170px,
+  tablet: 912px,
+);
+
+// Screen Size
+$screen-sizes: (
+  desktop: 1280px,
+  tablet-normal: 768px,
+  tablet: 976px,
+);
+
+/*COLOR*/
+$color-background: #f1f1f1;
+
+$color-bg-header: #adb5bd;
+$color-header-text: #fff;
+$color-logo: #adb5bd;
+$color-header-text: #fff;
+$color-bg-logo: #fff;
+
+$color-title: #757575;
+
+$color-body-text: #505050;
+
+$color-btn-bg: #EAEAEA;
+$color-btn-text-disabled: #757575;
+$color-btn-text: #07f;
+$color-btn-bg-disabled:  #ededed;
+$color-btn-bg-primary: #07f;
+$color-btn-text-primary: #fff;
+
+$color-table-head: #757575;
+$color-table-border: #f1f1f1;
+

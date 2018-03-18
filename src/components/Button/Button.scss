@@ -1,0 +1,37 @@
+@import "../../styles/variable";
+@import "../../styles/mixins";
+
+
+.btn {
+  min-width: 80px;
+  border: 0;
+  outline: none;
+  background-color: $color-btn-bg;
+  color: $color-btn-text;
+  font-size: 16px;
+  height: 40px;
+  font-weight: 500;
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
+  transition: background-color 200ms ease-in;
+
+  &:hover, &:focus {
+    background-color: darken($color-btn-bg, 5%);
+  }
+
+  @include modifier('primary') {
+    background-color: $color-btn-bg-primary;
+    color: $color-btn-text-primary;
+
+    &:hover, &:focus {
+      background-color: darken($color-btn-bg-primary, 5%);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $color-btn-bg;
+    color: #757575;
+  }
+}

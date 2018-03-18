@@ -1,0 +1,113 @@
+@import 'styles/variable';
+@import 'styles/mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $color-background;
+}
+
+.view-range {
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include screen-media('tablet-normal') {
+    width: map-get($map: $view-ranges, $key: 'tablet-normal');
+  }
+
+  @include screen-media('tablet') {
+    width: map-get($map: $view-ranges, $key: 'tablet');
+  }
+
+  @include screen-media('desktop') {
+    width: map-get($map: $view-ranges, $key: 'desktop');
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.content {
+  padding-top: 70px;
+}
+
+.page-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: bolder;
+  color: $color-title;
+}
+
+.form {
+  padding: 16px;
+  background-color: #fff;
+  margin-top: 35px;
+
+  @include element('content') {
+    display: flex;
+  }
+
+  @include element('submit') {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.row {
+  display: flex;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.col {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-1 {
+  width: 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.col-2 {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+
+.table-participants {
+  margin-top: 10px;
+
+  tr > th:nth-child(3),
+  tr > th:first-child {
+    width: 20%;
+  }
+
+  tr > th:nth-child(2),
+  tr > th:nth-child(4) {
+    width: 30%;
+  }
+
+  @include element('actions') {
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+
+    & > button {
+      margin-left: 10px;
+    }
+
+    & > span {
+      cursor: pointer;
+      margin-left: 40px;
+    }
+  }
+}

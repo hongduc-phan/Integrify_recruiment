@@ -1,0 +1,20 @@
+@import "../../styles/variable";
+@import "../../styles/mixins";
+
+.input {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #eae3e3;
+  height: 40px;
+  background-color: #fafafa;
+  color: #909090;
+  font-size: 16px;
+  outline: none;
+
+  @include element('error') {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
