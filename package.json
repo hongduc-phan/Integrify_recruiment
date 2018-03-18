@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.5",
+    "cross-env": "^5.1.4",
     "node-sass-chokidar": "^1.1.2",
     "normalize.css": "^8.0.0",
     "prop-types": "^15.6.1",
@@ -15,6 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "node-sass-chokidar src/ -o src/ && react-scripts build",
+    "build-gh": "node-sass-chokidar src/ -o src/ && cross-env PUBLIC_URL=https://hongduc-phan.github.io/Integrify_recruiment/ react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/",
