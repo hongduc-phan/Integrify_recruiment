@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 When you run the program in the first time, while it verifies on `localStorage` whether it has data ( participants)  or not.
 if not, it will generate automatically predefined 20 participants.   
 
+## You can visit the live site with this [link](https://hongduc-phan.github.io/Integrify_recruiment/index.html)
+
 ## Development
 
 Make sure you install node_module when first clone the project then go to the project.
